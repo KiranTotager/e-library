@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>register</title>
+    <link rel="stylesheet" href="login.css">
+</head>
+<body>
+    <div class="home">
+       <h1>Register</h1>
+        <form action="register.php" method="post">
+           <div class="form"> 
+            <label id="name" >Student name</label><br>
+            <input type="text" name="Sname" required>
+            <span></span>
+            <!-- <label for="name">Name</label> -->
+        </div>
+        <div class="form">
+            <label id="USN">USN</label><br>
+            <input type="text" name="usn" required>
+            <span></span>
+            <!-- <label for="usn">USN</label> -->
+        </div>
+        <div class="form">
+            <label id="branch">Branch</label><br>
+            <input type="text" name="branch" required>
+            <span></span>
+            <!-- <label for="Branch">Branch</label> -->
+        </div>
+        <div class="form">
+            <label id="phno">Mobile Number</label><br>
+            <input type="tel" name="phno" required>
+            <span></span>
+            <!-- <label for="Phone">Phone</label> -->
+            </div>
+        <div class="form">
+            <label id="phno">Password</label><br>
+            <input type="text" name="Password" required >
+            <span></span>
+            <!-- <label for="Phone">Phone</label> -->
+            </div>
+            <div class="form">
+                <input type="submit" value="Register"><br>
+                <div class="signup">already have an account?<a href="login.html">Login</a></div>
+            </div>
+        </form>
+    </div>
+</body>
+</html>

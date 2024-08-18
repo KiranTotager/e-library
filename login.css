@@ -1,0 +1,97 @@
+body{
+    background: linear-gradient(120deg,rgb(198 105 6),rgb(212, 0, 255)); 
+    height: 100vh;
+    background-repeat: no-repeat;
+    box-sizing: border-box;
+}
+h1{
+    text-align: center;
+    border-bottom: #302111;
+}
+.home{
+    width: 300px;
+    display: flex;
+    background: linear-gradient(120deg,rgb(198 105 6),rgb(212, 0, 255));
+    flex-direction: column;
+    /* position: relative; */
+    /* top: 50%; */
+    /* left: 50%; */
+    margin: 11% auto;
+    border: solid silver 2px;
+    border-radius: 10px;
+}
+input[type="text"]{
+    width: 100px;
+    height: 30px;
+    margin: 0px auto;
+    border: none;
+    /* border-radius: 10px; */
+}
+input[type="tel"]{
+    width: 190px;
+    height: 30px;
+    margin: 0px auto;
+    border:  none;
+    /* border-radius: 10px; */
+}
+input[type="submit"]{
+    width: 100px;
+    height: 30px;
+    margin: 0px auto;
+    border: solid 1px;
+    border-radius: 10px;
+    background-color: rgb(19, 130, 228);
+}
+input[type="text"]:active{
+    width: 100px;
+    height: 30px;
+    border: none;
+}
+.home input:focus {
+    border: none;
+}
+.form{
+    width: 230px;
+    display: block;
+    margin: 10px auto;
+}
+.form input:focus{
+    width: 230px;
+    transition: 0.5s;
+    outline: none;
+    border-bottom: solid rgb(91, 173, 245) 2px;
+}
+.form input[type="submit"]:focus{
+    width: 100px;
+}
+#name{
+    position: absolute;
+    /* top:35.9%; */
+    /* top:37%; */
+    color: #b3b0ad;
+}
+
+#USN{
+    position: absolute;
+    /* top:45.1%; */
+    /* top:46.2%; */
+    color: #b3b0ad;
+}
+#branch{
+    position: absolute;
+    /* top:54%; */
+    /* top:56%; */
+    color: #b3b0ad;
+}
+#phno{
+    position: absolute;
+    /* top:63.1%; */
+    /* top:64%; */
+    color: #b3b0ad;
+}
+.form input:focus~label{
+    background-color: red;
+}
+.signup a{
+    text-decoration: none;
+}

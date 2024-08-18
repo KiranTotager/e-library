@@ -1,0 +1,371 @@
+/* Base styles */
+* {
+    padding: 0;
+    margin: 0;
+    font-size: 1.02em;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Ysabeau SC', sans-serif;
+}
+
+#navbar {
+    display: grid;
+    grid-template-areas: "logo nav_items";
+    gap: 20px;
+    border-bottom: 5px solid #fb00ff;
+    width: 100%;
+    padding: 10px;
+}
+
+.logo > img {
+    width: 120px;
+    grid-area: logo;
+}
+
+.navitems {
+    list-style: none;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    grid-area: nav_items;
+}
+
+.item a {
+    text-decoration: none;
+    padding: 10px;
+    color: rgb(103, 99, 99);
+    border-radius: 10px;
+    text-align: center;
+}
+
+/* Style for login button */
+.login-btn {
+    padding: 10px 20px;
+    border-radius: 10px;
+    cursor: pointer;
+    text-decoration: none;
+    background-color: white;
+    color: rgb(103, 99, 99);
+    text-align: center;
+    border: none; /* Remove border */
+    display: inline-block; /* Ensure button-like appearance */
+}
+
+.login-btn:hover {
+    background-color: rgba(152, 149, 149, 0.666);
+    color: black;
+}
+
+.item a:hover {
+    color: rgb(251, 196, 0);
+    transition: 1s;
+}
+
+/* Home section */
+.home {
+    height: 40vh;
+    background-image: url("E-library_background.png");
+    display: flex;
+    flex-direction: column;
+    padding: 60px 20px;
+    background-size: cover;
+    background-position: center;
+    text-align: center;
+}
+
+.HomeSearch {
+    font-size: 3rem;
+    color: white;
+    padding: 20px;
+    font-family: 'Oswald', sans-serif;
+}
+
+.searchSection {
+    display: flex;
+    border: 2px solid #fb00ff;
+    width: 100%;
+    max-width: 345px;
+    padding: 10px;
+    margin: 0 auto;
+    background-color: white;
+    border-radius: 20px;
+}
+
+.searchSection button {
+    background-color: white;
+    border: none;
+    cursor: pointer;
+}
+
+#SearchBar {
+    border: none;
+    width: 100%;
+    border-right: solid #fb00ff 2px;
+}
+
+#SearchBar:focus {
+    outline: none;
+}
+
+#search_icon {
+    color: #fb00ff;
+}
+
+#note {
+    padding: 20px;
+    color: white;
+    margin-top: 40px; /* Added margin-top */
+    margin-bottom: 40px; /* Added margin-bottom */
+}
+
+/* Notice and Info sections */
+.notice, .infocenter {
+    width: 90%;
+    max-width: 1200px;
+    margin: 20px auto;
+    border-radius: 10px;
+    box-shadow: 4.7px 4px 10px black;
+}
+
+.notice {
+    border: solid #05050575 2px;
+    background-color: #b93a4445;
+}
+
+.notice h2 {
+    font-size: 2rem;
+    font-family: 'Dancing Script', cursive;
+    color: #ad00ff;
+    border-bottom: solid #ae8b8b 2px;
+}
+
+.infocenter {
+    border: solid #05050575 2px;
+    background-color: #c0dfff52;
+}
+
+.infocenter h2 {
+    font-size: 2rem;
+    font-family: 'Dancing Script', cursive;
+    color: #ff7900;
+    border-bottom: solid #e68b0e75 2px;
+}
+
+#info {
+    width: 100%;
+    max-width: 1300px;
+    margin: 80px auto;
+    display: flex;
+    justify-content: space-evenly;
+    padding: 20px;
+    border: solid #d7d2d27a 1px;
+    border-radius: 30px;
+    box-shadow: 5px 5px 5px #5551586b;
+}
+
+/* Branches */
+.branches {
+    width: 80%;
+    margin: 60px auto;
+    height: auto;
+    display: grid;
+    grid-template-areas:
+        "Sceince Cse"
+        "Ec eee"
+        "ce mech";
+    gap: 20px;
+}
+
+#branch-head {
+    color: #ff0000;
+    text-align: center;
+    font-size: 2rem;
+    background: linear-gradient(150deg, #ff00006e, #ffff00bd);
+    padding: 20px;
+    font-family: 'Oswald', sans-serif;
+}
+
+#Science, #Cse, #Ec, #eee, #ce, #mech {
+    text-decoration: none;
+    color: #362b3c;
+    margin: 10px 0;
+    border: solid #ff8d00 2px;
+    background: #fff7a691;
+    border-radius: 22px;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+}
+
+#Sceince i, #Cse i, #Ec i, #eee i, #ce i, #mech i {
+    margin-right: 20px;
+}
+
+#Cse:hover, #Sceince:hover, #Ec:hover, #eee:hover, #ce:hover, #mech:hover {
+    background-color: rgba(212, 184, 42, 0.701);
+    transition: 0.5s;
+}
+
+/* Features section */
+#features {
+    width: 100%;
+    max-width: 1300px;
+    margin: 100px auto;
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+
+#features div {
+    width: 22%;
+    text-align: center;
+    margin: 10px;
+}
+
+#bookicon, #accessicon, #notificationicon, #activeicon {
+    font-size: 5em;
+}
+
+#book > section, #access > section, #notification > section, #active > section {
+    color: #8b8989;
+}
+
+/* About section */
+#about {
+    height: 150px;
+    background-color: #343131ed;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+#socialMedia {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    max-width: 400px;
+}
+
+#socialMedia div {
+    margin: 0 10px;
+}
+
+#instaicon, #fbicon, #linkedinicon, #telegramicon {
+    font-size: 2em;
+}
+
+#instaicon:hover {
+    color: #8a3ab9;
+}
+
+#fbicon:hover {
+    color: rgb(0, 153, 255);
+}
+
+#linkedinicon:hover {
+    color: rgb(0, 162, 255);
+}
+
+#telegramicon:hover {
+    color: rgb(0, 153, 255);
+}
+
+#contacta {
+    text-decoration: none;
+    color: white;
+}
+
+#socialmediah {
+    color: white;
+    font-family: 'Dancing Script', cursive;
+}
+
+#copyright {
+    color: white;
+}
+
+/* Responsive styles */
+@media (max-width: 768px) {
+    #navbar {
+        grid-template-areas: 
+            "logo"
+            "nav_items";
+        gap: 0;
+    }
+
+    .navitems {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #features div {
+        width: 45%;
+    }
+
+    .branches {
+        grid-template-areas:
+            "Sceince"
+            "Cse"
+            "Ec"
+            "eee"
+            "ce"
+            "mech";
+    }
+
+    .notice, .infocenter {
+        width: 95%; /* Increase width on smaller screens */
+        margin: 100px auto; /* Adjust margin */
+    }
+
+    #note {
+        margin-top: 60px; /* Add more space above */
+        margin-bottom: 60px; /* Add more space below */
+    }
+}
+
+@media (max-width: 480px) {
+    #features div {
+        width: 100%;
+    }
+
+    .branches {
+        grid-template-areas:
+            "Sceince"
+            "Cse"
+            "Ec"
+            "eee"
+            "ce"
+            "mech";
+    }
+
+    #navbar {
+        grid-template-areas: 
+            "logo"
+            "nav_items";
+    }
+
+    .home, .notice, .infocenter, #info {
+        padding: 10px;
+    }
+    
+    .searchSection {
+        width: 100%;
+        max-width: 100%;
+    }
+    
+    #SearchBar {
+        width: 100%;
+    }
+
+    .notice, .infocenter {
+        width: 100%; /* Full width on very small screens */
+        margin: 100px 0; /* Adjust margin */
+    }
+
+    #note {
+        margin-top: 60px; /* Add
+
